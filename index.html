@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дипломная работа</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo">
+        <div class="infoHead">
+            <h4>ООО "Шеогорат"</h4>
+            <h4>+79312296684</h4>
+        </div>
+        <div class="menu">
+            <div class="menu-span"></div>
+            <div class="menu-span"></div>
+            <div class="menu-span"></div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Наши услуги</a>
+        <a href="#">Найти нас</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Подать заявку</a>
+    </nav>
+    
+    <main>
+        <div class="topblockformain">
+            <div class="formtop">
+                <form action="">
+                    <input type="text" name="otkuda" id="" placeholder="Адрес погрузки">
+                    <input type="text" name="kuda" id="" placeholder="Адрес отгрузки">
+                    <input type="datetime" name="" id="" placeholder="Дата и время">
+                    <div class="forminputrange">
+                        <label  for="dlitelnost" id="here">Длительность:</label>
+                        <input class="range" type="range" name="dlitelnost" id="size" min="0" max="4" step="1" value="1" oninput="num()">
+                    </div>
+                    
+                    <div class="containerFormInput">
+                        <div class="forminput">
+                            <label for="gruz">Грузчики</label>
+                            <select name="gruz" id="">
+                                <option value="00">0</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                            </select>
+                        </div>
+                        <div class="forminput">
+                            <label for="passaziri">Пассажиры</label>
+                            <select name="passaziri" id="">
+                                <option value="10">0</option>
+                                <option value="11">1</option>
+                                <option value="12">2</option>
+                                <option value="13">3</option>
+                            </select>
+                        </div>
+                        <div class="forminput">
+                            
+                        <label for="cars">Машина</label>
+                        <select name="cars" id="">
+                            <option value="20">Стандарт - Объем: 16 м3, пассажиры: 5</option>
+                            <option value="21">Высокая - Объем: 11.4 м3, пассажиры: 5</option>
+                            <option value="22">Широкая - Объем: 16 м3, пассажиры: 5</option>
+                        </select>
+    
+                        </div>
+                        <div class="forminput">
+                            <label for="usligi">Выберите дополнительные услуги</label>
+                            <select name="uslugi" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="tel" name="" id="" placeholder="Номер телефона для связи">
+                    <input type="text" name="" id="" placeholder="Примечание к заказу">
+                    <div class="btn">
+                        <a href="#">Оформить заказ</a>
+                    </div>
+                </form>
+            </div>
+            <div class="slider">
+            </div>
+        </div>
+
+        <div class="vip">
+            <h3>Преимущества работы с нами</h3>
+            <div class="boxitemsvip">
+                <div class="itemvip">
+                    <div class="left">
+                        <img src="20.jpg" alt="img">
+                        <h4>Срочная подача</h4>
+                    </div>
+                    <p>Срочно требуется грузоперевозка? Мы всегда рядом! Подадим машину быстро - 15 минут и мы у Вас. Наши сотрудники оперативно примут заказ, подберут машину даже для деликатного и нестандартного груза и сразу отправят его на адрес. Нужно срочно - это к нам!</p>
+                </div>
+                <div class="itemvip">
+                    <p>Наш подход - каждая перевозка индивидуальна! Мы подберем автомобиль именно под Ваши потребности, ведь в нашем автопарке более 50 видов автомобилей разной грузоподъёмности и с разными кузовами под любой запрос. Перевезем все! </p>
+                    <div class="right">
+                        <img src="20.jpg" alt="img">
+                        <h4>Большой автопарк</h4>
+                    </div>
+                </div>
+                <div class="itemvip">
+                    <div class="left">
+                        <img src="20.jpg" alt="img">
+                        <h4>Упаковка</h4>
+                    </div>
+                    <p>Мы заботимся о вашем грузе! Поэтому предоставляем упаковочный материал и помощь наших грузчиков для бережной и аккуратной перевозки. Коробки, стретч-пленка, воздушно-пупырчатая пленка и скотч - лучший друг грузовой перевозки. Просто, быстро, надежно! </p>
+                </div>
+                <div class="itemvip">
+                    <p>Считаете, что от потери и порчи груза никто не застрахован? Только не наши клиенты! Мы предоставляем услугу страхования груза во время грузоперевозки, в том числе от непредвиденных ситуаций на дороге. С нами спокойно!</p>
+                    <div class="right">
+                    <img src="20.jpg" alt="img">
+                    <h4>Страховка</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uslugi">
+                <h3>Наши услуги</h3>
+                <div class="uslugiboxitem">
+                    <div class="uslugiitem">
+                        <img src="20.jpg" alt="img">
+                        <h4>Переезд</h4>
+                    </div>
+                    <div class="uslugiitem">
+                        <img src="20.jpg" alt="img">
+                        <h4>Перевозка мебели</h4>
+                    </div>
+                    <div class="uslugiitem">
+                        <img src="20.jpg" alt="img">
+                        <h4>Грузоперевозки</h4>
+                    </div>
+                    <div class="uslugiitem">
+                        <img src="20.jpg" alt="img">
+                        <h4>Грузчики</h4>
+                    </div>
+                </div>
+                <ul class="uluslugi">
+                    <li>
+                        <h3>Переезд</h3>
+                        <p>
+                            Решились переехать? Мы поможем организовать переезд быстро, просто и качественно! Подадим машину с грузчиками или без, а так же разберем, соберем, упакуем и расставим по местам. Специалисты нашей компании организуют и выполнят переезд с учетом всех особенностей вашего заказа. Кроме того, весь комплекс услуг Вы можете заказать на ближайшее время. 
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Перевозка мебели</h3>
+                        <p>Нужно перевезти мебель, технику или любой другой груз? Вы по адресу! Перевезем шкаф, диван, кровать, комод, холодильник, стиральную машину или чтобы-то ни было без повреждений и прямо сейчас. Разберем и упакуем при необходимости, аккуратно погрузим, бережно перевезем и поставим на новое место без лишних для вас хлопот.</p>
+                    </li>
+                    <li>
+                        <h3>Грузоперевозки</h3>
+                        <p>Грузовая перевозка может оказаться не простой задачей, но только не для нас! Более 20 лет мы занимаемся перевозками различных грузов в городе и области. Собственный автопарк и широкий спектр дополнительных услуг позволяет подойти к каждой грузоперевозке индивидуально, а доступная ценовая политика сделает перевозку по карману каждому. </p>
+                    </li>
+                    <li>
+                        <h3>Грузчики</h3>
+                        <p>А вы знали, что можно не надрывать спину, а просто говорить, куда ставить груз? Мы предоставляем услуги профессиональных грузчиков для Вас. Наши грузчики погрузят и разгрузят все в машину, разберут и соберут мебель, аккуратно все упакуют и распакуют, а так же расставят по местам. Более того, при работе без лифта мы не требуем доплат. Экономьте время, силы и деньги с нами! </p>
+                    </li>
+                </ul>
+                
+                
+            </div>
+
+            
+            <div class="map">
+                <h3>
+                    Осуществляем перевозки
+                    </h3>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A17e32b4bf19103f9ab99326222132e4ae22c4677e0e018bee588e31b92c5865a&amp;width=794&amp;height=399&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+            <div class="add">
+                <img src="bg.jpg" alt="">
+                <h1>Почему именно мы</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi voluptatem itaque aperiam omnis. Rem, nulla sequi provident harum quibusdam magnam qui laudantium ducimus consequuntur! Incidunt maxime maiores animi dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, sit commodi! Magnam totam ullam, alias laudantium, a eum molestias ab dolorum, temporibus ipsam ad. Natus repellat aperiam quisquam. Commodi, illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam corrupti inventore neque ea fugiat quam voluptatibus et fugit enim velit. Reprehenderit, odio? Deleniti dolore illum, porro provident est et autem!</p>
+                <ul>
+                    <li>1 пункт</li>
+                    <li>2 пункт</li>
+                    <li>3 пункт</li>
+                    <li>4 пункт</li>
+                </ul>
+            </div>
+
+            <div class="reviev">
+            <!--слайдер с комментами-->
+            </div>
+            
+            <div class="call">
+                <h2>
+                    Оставьте заявку и мы вам перезвоним в течение 1 минуты
+                    </h2>
+                <div class="callbox">
+                    <img src="20.jpg" alt="">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Ваше имя">
+                        <input type="tel" name="" id="" placeholder="Ваш телефон">
+                        <div class="btn">
+                            <a href="#">Отправить заявку</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="topfot">
+            <div class="textbox">
+                <h3>Адрес</h3>
+                <h4>​Заводская улица, 10, 3 этаж
+                    Пикалёво, Бокситогорский муниципальный район, Ленинградская область</h4>
+
+            </div>
+            <div class="textbox">
+                <h3>Контакты</h3>
+                <h4>+79312296684</h4>
+            </div>
+            <div class="textbox">
+                <h3>Мы в социальных сетях</h3>
+                <a href="https://vk.com/gruzoperevozki2017">VK</a>
+            </div>
+        </div>
+
+        <div class="botfot">
+            <h2>Сайт грузоперевозок «Шеогорат». ©2023</h2>
+        </div>
+
+    </footer>
+</body>
+</html>
