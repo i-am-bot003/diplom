@@ -13,23 +13,23 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="logo">
+        <img class="logo" src="logo2.png" alt="logo">
         <div class="infoHead">
             <h4>ООО "Шеогорат"</h4>
             <h4>+79312296684</h4>
         </div>
-        <div class="menu">
-            <div class="menu-span"></div>
-            <div class="menu-span"></div>
-            <div class="menu-span"></div>
-        </div>
+        
     </header>
 
+    <div class="soc">
+    <a href="https://vk.com/gruzoperevozki2017"> <img src="vk.png" alt=""></a>
+    </div>
+
     <nav>
-        <a href="#">Наши услуги</a>
-        <a href="#">Найти нас</a>
-        <a href="#">Отзывы</a>
-        <a href="#">Подать заявку</a>
+        <a href="#uslugi">Наши услуги</a>
+        <a href="#find">Найти нас</a>
+        <a href="#vip">Преимущества</a>
+        <a href="#call">Подать заявку</a>
     </nav>
     
     <main>
@@ -41,7 +41,8 @@
                     <input type="datetime" name="" id="" placeholder="Дата и время">
                     <div class="forminputrange">
                         <label  for="dlitelnost" id="here">Длительность:</label>
-                        <input class="range" type="range" name="dlitelnost" id="size" min="0" max="4" step="1" value="1" oninput="num()">
+                        <input class="numberrange" type="number" name="numberrange" id="" value="0" min="0" max="4" oninput="dlitelnost.value = numberrange.value">
+                        <input class="range" type="range" name="dlitelnost" id="size" min="0" max="4" step="1" value="0" oninput="numberrange.value = dlitelnost.value">
                     </div>
                     
                     <div class="containerFormInput">
@@ -74,7 +75,7 @@
     
                         </div>
                         <div class="forminput">
-                            <label for="usligi">Выберите дополнительные услуги</label>
+                            <label for="usligi">Дополнительные услуги</label>
                             <select name="uslugi" id="">
                                 <option value=""></option>
                                 <option value=""></option>
@@ -89,16 +90,37 @@
                     </div>
                 </form>
             </div>
-            <div class="slider">
-            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="1.jpg">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="2.jpg" >
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="3.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              <div class="dotcont" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
         </div>
 
+        <a name="vip"></a>
         <div class="vip">
             <h3>Преимущества работы с нами</h3>
             <div class="boxitemsvip">
                 <div class="itemvip">
                     <div class="left">
-                        <img src="20.jpg" alt="img">
+                        <img src="1i.png" alt="img">
                         <h4>Срочная подача</h4>
                     </div>
                     <p>Срочно требуется грузоперевозка? Мы всегда рядом! Подадим машину быстро - 15 минут и мы у Вас. Наши сотрудники оперативно примут заказ, подберут машину даже для деликатного и нестандартного груза и сразу отправят его на адрес. Нужно срочно - это к нам!</p>
@@ -106,13 +128,13 @@
                 <div class="itemvip">
                     <p>Наш подход - каждая перевозка индивидуальна! Мы подберем автомобиль именно под Ваши потребности, ведь в нашем автопарке более 50 видов автомобилей разной грузоподъёмности и с разными кузовами под любой запрос. Перевезем все! </p>
                     <div class="right">
-                        <img src="20.jpg" alt="img">
+                        <img src="4i.png" alt="img">
                         <h4>Большой автопарк</h4>
                     </div>
                 </div>
                 <div class="itemvip">
                     <div class="left">
-                        <img src="20.jpg" alt="img">
+                        <img src="3i.png" alt="img">
                         <h4>Упаковка</h4>
                     </div>
                     <p>Мы заботимся о вашем грузе! Поэтому предоставляем упаковочный материал и помощь наших грузчиков для бережной и аккуратной перевозки. Коробки, стретч-пленка, воздушно-пупырчатая пленка и скотч - лучший друг грузовой перевозки. Просто, быстро, надежно! </p>
@@ -120,29 +142,29 @@
                 <div class="itemvip">
                     <p>Считаете, что от потери и порчи груза никто не застрахован? Только не наши клиенты! Мы предоставляем услугу страхования груза во время грузоперевозки, в том числе от непредвиденных ситуаций на дороге. С нами спокойно!</p>
                     <div class="right">
-                    <img src="20.jpg" alt="img">
+                    <img src="2i.png" alt="img">
                     <h4>Страховка</h4>
                     </div>
                 </div>
             </div>
-
+            <a name="uslugi"></a>
             <div class="uslugi">
                 <h3>Наши услуги</h3>
                 <div class="uslugiboxitem">
                     <div class="uslugiitem">
-                        <img src="20.jpg" alt="img">
+                        <img src="1ii.png" alt="img">
                         <h4>Переезд</h4>
                     </div>
                     <div class="uslugiitem">
-                        <img src="20.jpg" alt="img">
+                        <img src="2ii.png" alt="img">
                         <h4>Перевозка мебели</h4>
                     </div>
                     <div class="uslugiitem">
-                        <img src="20.jpg" alt="img">
+                        <img src="3ii.png" alt="img">
                         <h4>Грузоперевозки</h4>
                     </div>
                     <div class="uslugiitem">
-                        <img src="20.jpg" alt="img">
+                        <img src="4ii.png" alt="img">
                         <h4>Грузчики</h4>
                     </div>
                 </div>
@@ -170,23 +192,27 @@
                 
             </div>
 
-            
+            <a name="find"></a>
             <div class="map">
                 <h3>
                     Осуществляем перевозки
                     </h3>
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A17e32b4bf19103f9ab99326222132e4ae22c4677e0e018bee588e31b92c5865a&amp;width=794&amp;height=399&amp;lang=ru_RU&amp;scroll=true"></script>
+                    <script class="mapscript" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0a9a925dba83362268c4fcd5bd366ae0ddac1e1881f7ec2bb3b00a4873d297fc&amp;width=1095&amp;height=472&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
 
             <div class="add">
                 <img src="bg.jpg" alt="">
                 <h1>Почему именно мы</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi voluptatem itaque aperiam omnis. Rem, nulla sequi provident harum quibusdam magnam qui laudantium ducimus consequuntur! Incidunt maxime maiores animi dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, sit commodi! Magnam totam ullam, alias laudantium, a eum molestias ab dolorum, temporibus ipsam ad. Natus repellat aperiam quisquam. Commodi, illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam corrupti inventore neque ea fugiat quam voluptatibus et fugit enim velit. Reprehenderit, odio? Deleniti dolore illum, porro provident est et autem!</p>
+                <p>Мы предлагаем недорогие грузоперевозки по Ленинградской и Вологодской области и всей России на ГАЗелях с различным типом кузова и бортов. Цены ниже рыночных! возможность заказа как отдельной машины, так и отправки попутного груза и возможность догруза. Окончательный расчет стоимости по телефону. Выполняем все виды доставок, в том числе квартирные, дачные и офисные переезды. Переезжайте легко с нами 8(931) 229-66-84. Перевозим аккуратно, быстро и бюджетно 👌</p>
                 <ul>
-                    <li>1 пункт</li>
-                    <li>2 пункт</li>
-                    <li>3 пункт</li>
-                    <li>4 пункт</li>
+                    <li>Междугородние Грузоперевозки Пикалево, Бокситогорск, Тихвин, Кириши, Лодейное Поле, Ленинградская область, Санкт-Петербург, Череповец, Вологодская область.</li>
+                    <li>Быстро и бережно доставим ваш груз в любую точку страны</li>
+                    <li>На остальные маршруты цена договорная</li>
+                    <li>Еженедельные поездки по маршруту СПб – Череповец - СПб</li>
+                    <li>Доставка попутных грузов, догрузов</li>
+                    <li>Экспресс доставка на межгород </li>
+                    <li>Заберем и привезем ваши заказы с ИКЕА, Леруа Мерлен, Оби и других магазинов</li>
+                    <li>Официальное оформление документов </li>
                 </ul>
             </div>
 
@@ -194,12 +220,13 @@
             <!--слайдер с комментами-->
             </div>
             
+            <a name="call"></a>
             <div class="call">
                 <h2>
                     Оставьте заявку и мы вам перезвоним в течение 1 минуты
                     </h2>
                 <div class="callbox">
-                    <img src="20.jpg" alt="">
+                    <img src="logo4.png" alt="">
                     <form action="">
                         <input type="text" name="" id="" placeholder="Ваше имя">
                         <input type="tel" name="" id="" placeholder="Ваш телефон">
