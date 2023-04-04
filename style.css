@@ -303,6 +303,7 @@ input{
 .add{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .add img, h1{
@@ -502,4 +503,307 @@ footer .topfot{
   transition: 0.3s;
   box-shadow: 0px 0px 7px #3672eb;
   background-color: #3672eb
+}
+
+.cursor{
+  display: block;
+  width: 150px;
+  position: absolute;
+  top: 500px;
+  left: 1180px;
+  transform: rotateX(180deg);
+  transform: rotateY(180deg);
+}
+
+#labelcursor{
+  display: block;
+  position: absolute;
+  top: 650px;
+  left: 1350px;
+}
+
+@media(max-width: 1480px){
+  .soc img{
+    left: 94%
+  }
+  .slideshow-container, .cursor, #labelcursor,.dotcont{
+    display: none;
+  }
+  
+  .formtop{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 1230px){
+  .soc img{
+    display: none
+  }
+  .slideshow-container, .cursor, #labelcursor,.dotcont{
+    display: none;
+  }
+  
+  .formtop{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .map iframe{
+    width: 200%
+  }
+
+}
+
+@media(max-width: 770px){
+  .soc img{
+    display: none
+  }
+  .slideshow-container, .cursor, #labelcursor,.dotcont{
+    display: none;
+  }
+  
+  .formtop{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .map iframe{
+    width: 150%
+  }
+  .infoHead{
+    display: none;
+  }
+  
+  .left img, .right img{
+    display: none;
+  }
+  
+  .left h4::before, .right h4::before{
+    display: none;
+  }
+  
+  .itemvip{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .itemvip h4, .right h4{
+    display: none
+  }
+  
+  .uslugiboxitem{
+    display: none;
+  }
+  
+  footer{
+    font-size: 15px;
+  }
+  .topfot{
+    padding: 0 10px;
+  }
+  .add img{
+    display: none;
+  }
+  
+}
+
+@media(max-width: 560px){
+  .soc img{
+    display: none
+  }
+  .slideshow-container, .cursor, #labelcursor,.dotcont{
+    display: none;
+  }
+  
+  .formtop{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .map iframe{
+    width: 150%
+  }
+  .infoHead{
+    display: none;
+  }
+  
+  .left img, .right img{
+    display: none;
+  }
+  
+  .left h4::before, .right h4::before{
+    display: none;
+  }
+  
+  .itemvip{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .itemvip h4, .right h4{
+    display: none
+  }
+  
+  .uslugiboxitem{
+    display: none;
+  }
+  
+  footer{
+    font-size: 15px;
+  }
+  .topfot{
+    padding: 0 10px;
+  }
+  
+  nav{
+    font-size: 15px;
+  }
+  
+  .call{
+    width: 100%;
+  }
+  
+  .call input{
+    width: 80%;
+    margin: 17px auto
+  }
+  
+  .call img{
+   display: none; 
+  }
+  
+  footer .topfot{
+    font-size: 12px;
+  }
+  
+  footer .botfot{
+    font-size: 14px;
+  }
+  
+  .add img{
+    display: none;
+  }
+  
+  .add li::before{
+    display: none
+  }
+  .add li{
+    list-style-type: '-'
+  }
+  
+  .uslugi{
+    border-radius: 0px;
+    text-align: center;
+    
+  }
+  
+  .uluslugi li h3::before{
+    display: none
+  }
+  
+  .uluslugi{
+    padding: 0
+  }
+  .range{
+    display: none
+  }
+}
+
+@media(max-width: 450px){
+  .soc img{
+    display: none
+  }
+  .slideshow-container, .cursor, #labelcursor,.dotcont{
+    display: none;
+  }
+  
+  .formtop{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .map iframe{
+    width: 150%
+  }
+  .infoHead{
+    display: none;
+  }
+  
+  .left img, .right img{
+    display: none;
+  }
+  
+  .left h4::before, .right h4::before{
+    display: none;
+  }
+  
+  .itemvip{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .itemvip h4, .right h4{
+    display: none
+  }
+  
+  .uslugiboxitem{
+    display: none;
+  }
+  
+  footer{
+    font-size: 15px;
+  }
+  .topfot{
+    padding: 0 10px;
+  }
+  
+  nav{
+    font-size: 15px;
+  }
+  
+  .call{
+    width: 100%;
+  }
+  
+  .call input{
+    width: 80%;
+    margin: 17px auto
+  }
+  
+  .call img{
+   display: none; 
+  }
+  
+  footer .topfot{
+    font-size: 12px;
+  }
+  
+  footer .botfot{
+    font-size: 14px;
+  }
+  
+  .add img{
+    display: none;
+  }
+  
+  .add li::before{
+    display: none
+  }
+  .add li{
+    list-style-type: '-'
+  }
+  
+  .uslugi{
+    border-radius: 0px;
+    text-align: center;
+    
+  }
+  
+  .uluslugi li h3::before{
+    display: none
+  }
+  
+  .uluslugi{
+    padding: 0
+  }
+  .range{
+    display: none
+  }
 }
