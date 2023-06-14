@@ -1,5 +1,5 @@
 <?php
-        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Origin: https://github.com/i-am-bot003/diplom/blob/main/index.html ");
         $to = "shtorm_and_happy_enderman@mail.ru";
         $subject = 'Заказ'; //Заголовок сообщения
         $message = '
