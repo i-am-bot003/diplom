@@ -36,10 +36,10 @@
     <main>
         <div class="topblockformain">
             <div class="formtop">
-                <form action="https://github.com/i-am-bot003/diplom/blob/main/send.php" id="form">
+                <form action="send.php" id="form">
                     <input type="text" name="otkuda" id="" placeholder="Адрес погрузки">
                     <input type="text" name="kuda" id="" placeholder="Адрес отгрузки">
-                    <input type="datetime" name="" id="" placeholder="Дата и время">
+                    <input type="datetime" name="datetime" id="" placeholder="Дата и время">
                     <div class="forminputrange">
                         <label  for="dlitelnost" id="here">Длительность:</label>
                         <input class="numberrange" type="number" name="numberrange" id="" value="0" min="0" max="4" oninput="dlitelnost.value = numberrange.value">
@@ -89,23 +89,22 @@
                     <input type="text" name="dopolnenia" id="" placeholder="Примечание к заказу">
                     <button type="submit">Оформить заказ</button>
                     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#form").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
-           e.preventDefault();
-            var form_data = $(this).serialize(); // Собираем все данные из формы
-            $.ajax({
-                type: "POST", // Метод отправки
-                url: "send.php", // Путь до php файла отправителя
-                data: form_data,
-                success: function () {
-                    // Код в этом блоке выполняется при успешной отправке сообщения
-                    alert("Ваше сообщение отправлено!");
-                }
-            });
-        });
-    });    
-</script>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $("#form").submit(function (e) { 
+                            e.preventDefault();
+                                var form_data = $(this).serialize(); 
+                                $.ajax({
+                                    type: "POST", 
+                                    url: "send.php", 
+                                    data: form_data,
+                                    success: function () {
+                                        console.log("Ваше сообщение отправлено!");
+                                    }
+                                });
+                            });
+                        });    
+                    </script>
                 </form>
             </div>
             <div class="slideshow-container">

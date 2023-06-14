@@ -1,22 +1,25 @@
 <?php
-        header("Access-Control-Allow-Origin: https://github.com/i-am-bot003/diplom/blob/main/index.html ");
-        $to = "shtorm_and_happy_enderman@mail.ru";
-        $subject = 'Заказ'; //Заголовок сообщения
+        header("Access-Control-Allow-Origin: * ");
+        $to = "Dj.pashke@yandex.ru";
+        $subject = 'Заказ'; 
         $message = '
                 <html>
                     <head>
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p>Имя: '.$_POST['name'].'</p>
+                        <p>Адрес погрузки: '.$_POST['otkuda'].'</p>
+                        <p>Адрес разгрузки: '.$_POST['kuda'].'</p>
+                        <p>Дата и время: '.$_POST['datetime'].'</p>
+                        <p>Грузчики: '.$_POST['gruz'].'</p>
+                        <p>Пассажиры: '.$_POST['passaziri'].'</p>
+                        <p>Машина: '.$_POST['cars'].'</p>
+                        <p>Дополнительные услуги: '.$_POST['uslugi'].'</p>
                         <p>Телефон: '.$_POST['phone'].'</p>
-                        <p>Email: '.$_POST['email'].'</p>
-                        <p>Регион: '.$_POST['region'].'</p>
-                        <p>Сообщение: '.$_POST['text'].'</p>                                   
+                        <p>Примечания к заказу:'.$_POST['dopolnenia'].'</p>                                   
                     </body>
-                </html>'; //Текст сообщения
-        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: Отправитель <from@example.com>\r\n"; //Наименование и почта отправителя
-        mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-
+                </html>'; 
+        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
+        $headers .= "From: Отправитель <from@example.com>\r\n"; 
+        mail($to, $subject, $message, $headers); 
 ?>
